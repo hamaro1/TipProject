@@ -52,8 +52,32 @@ class ViewController: UIViewController {
         print("view did disappear")
     }
     
+    @IBAction func onTap(_ sender: Any) {
+        print("Hello")
+        
+        view.endEditing(true)
+    }
     
-
+    @IBAction func calculateTip(_ sender: Any) {
+       
+        //Get the bill amount
+        let bill = Double(billAmountTextField.text!) ?? 0
+        
+        //Calculate the tip and total
+        let tipPercentages = [0.15, 0.18, 0.2]
+        
+        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        
+        let total = tip + bill
+        
+        //Update the tip and total labels
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        
+        totalLabel.text = String(format: "$%.2f", total)
+        
+    }
+    
 
 }
 
