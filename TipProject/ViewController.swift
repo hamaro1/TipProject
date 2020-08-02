@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .blue
+        billAmountTextField.becomeFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {
