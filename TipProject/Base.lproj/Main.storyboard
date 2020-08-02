@@ -108,6 +108,15 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="0uA-qk-Mxc"/>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="Gpj-2D-njS" id="NtS-VZ-smW"/>
+                        <outlet property="billField" destination="63u-h0-fpi" id="faH-eU-t7Y"/>
+                        <outlet property="tipControl" destination="rpM-wx-tNw" id="eZk-Ny-SBA"/>
+                        <outlet property="tipLabel" destination="ef6-eY-zIU" id="AWs-Pd-QEJ"/>
+                        <outlet property="tipText" destination="nzr-fQ-Nql" id="2Tf-KC-4z2"/>
+                        <outlet property="totalLabel" destination="GbM-oS-Bdp" id="Izh-C5-m9x"/>
+                        <outlet property="totalText" destination="BQW-IT-PEJ" id="5iJ-fo-FlL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Egq-P7-BVj"/>
